@@ -52,9 +52,6 @@
     <UnityVersion>2018.4.16f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
-  </ItemGroup>
-  <ItemGroup>
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/Hub/Editor/2018.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -64,6 +61,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\CollisionScript.cs" />
+    <Compile Include="Assets\ControllerScripts\EnemyController.cs" />
+    <Compile Include="Assets\ControllerScripts\FoodController.cs" />
+    <Compile Include="Assets\ControllerScripts\PlayerController.cs" />
     <Compile Include="Assets\DaydreamElements\Elements\Tunneling\Scripts\BaseVignetteController.cs" />
     <Compile Include="Assets\DaydreamElements\Elements\Tunneling\Scripts\FadeVignetteController.cs" />
     <Compile Include="Assets\DaydreamElements\Elements\Tunneling\Scripts\FirstPersonTunnelingLocomotion.cs" />
@@ -91,7 +91,6 @@
     <Compile Include="Assets\DaydreamRenderer\Scripts\ShadowCaster.cs" />
     <Compile Include="Assets\DaydreamRenderer\Scripts\ShadowReceiver.cs" />
     <Compile Include="Assets\DaydreamRenderer\Scripts\ShadowSource.cs" />
-    <Compile Include="Assets\FoodController.cs" />
     <Compile Include="Assets\GoogleVR\Beta\Demos\Scripts\DemoObjectController6DoF.cs" />
     <Compile Include="Assets\GoogleVR\Beta\Demos\Scripts\DemoSeeThroughController.cs" />
     <Compile Include="Assets\GoogleVR\Beta\Scripts\GvrBetaControllerInput.cs" />
@@ -216,7 +215,6 @@
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\Internal\GvrCursorHelper.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\Internal\SuppressMemoryAllocationErrorAttribute.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
-    <Compile Include="Assets\PlayerController.cs" />
     <None Include="Assets\DaydreamRenderer\Shaders\daydreamStandardInclude.cginc" />
     <None Include="Assets\DaydreamRenderer\Shaders\daydreamGizmo.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
@@ -266,19 +264,19 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\DaydreamRenderer\Resources\shadowFilter.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/siddharthhathi/OneDrive/Everything/Documents/School/12th Grade/cs5/harold5/Map1/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/Amy/Documents/harold/Map1/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>/Users/siddharthhathi/OneDrive/Everything/Documents/School/12th Grade/cs5/harold5/Map1/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>/Users/Amy/Documents/harold/Map1/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>/Users/siddharthhathi/OneDrive/Everything/Documents/School/12th Grade/cs5/harold5/Map1/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>/Users/Amy/Documents/harold/Map1/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/siddharthhathi/OneDrive/Everything/Documents/School/12th Grade/cs5/harold5/Map1/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/Amy/Documents/harold/Map1/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>/Users/siddharthhathi/OneDrive/Everything/Documents/School/12th Grade/cs5/harold5/Map1/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>/Users/Amy/Documents/harold/Map1/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Hub/Editor/2018.4.16f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -479,22 +477,22 @@
       <HintPath>/Applications/Unity/Hub/Editor/2018.4.16f1/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="fbsdefines_cs">
-      <HintPath>/Users/siddharthhathi/OneDrive/Everything/Documents/School/12th Grade/cs5/harold5/Map1/Assets/DaydreamRenderer/Plugins/fbsdefines_cs.dll</HintPath>
+      <HintPath>/Users/Amy/Documents/harold/Map1/Assets/DaydreamRenderer/Plugins/fbsdefines_cs.dll</HintPath>
     </Reference>
     <Reference Include="FlatBuffers">
-      <HintPath>/Users/siddharthhathi/OneDrive/Everything/Documents/School/12th Grade/cs5/harold5/Map1/Assets/DaydreamRenderer/Plugins/FlatBuffers.dll</HintPath>
+      <HintPath>/Users/Amy/Documents/harold/Map1/Assets/DaydreamRenderer/Plugins/FlatBuffers.dll</HintPath>
     </Reference>
     <Reference Include="Google.ProtocolBuffers">
-      <HintPath>/Users/siddharthhathi/OneDrive/Everything/Documents/School/12th Grade/cs5/harold5/Map1/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
+      <HintPath>/Users/Amy/Documents/harold/Map1/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>/Users/siddharthhathi/OneDrive/Everything/Documents/School/12th Grade/cs5/harold5/Map1/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>/Users/Amy/Documents/harold/Map1/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>/Users/siddharthhathi/OneDrive/Everything/Documents/School/12th Grade/cs5/harold5/Map1/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>/Users/Amy/Documents/harold/Map1/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>/Users/siddharthhathi/OneDrive/Everything/Documents/School/12th Grade/cs5/harold5/Map1/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>/Users/Amy/Documents/harold/Map1/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>/Applications/Unity/Hub/Editor/2018.4.16f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
