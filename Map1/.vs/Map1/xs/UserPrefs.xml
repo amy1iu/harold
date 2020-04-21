@@ -1,35 +1,16 @@
 ﻿<Properties StartupConfiguration="{3D7B3E08-49C5-6FA9-284C-8E2A47E3113F}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/DaydreamElements/Elements/Tunneling/Scripts/FirstPersonTunnelingLocomotion.cs">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ControllerScripts/PlayerController.cs">
     <Files>
-      <File FileName="Assets/PlayerController.cs" Line="25" Column="6" />
-      <File FileName="Assets/FoodController.cs" />
-      <File FileName="Assets/DaydreamElements/Elements/Tunneling/Scripts/FirstPersonTunnelingLocomotion.cs" Line="132" Column="53" />
+      <File FileName="Assets/DaydreamElements/Elements/Tunneling/Scripts/FirstPersonTunnelingLocomotion.cs" Line="1" Column="1" />
+      <File FileName="Assets/ControllerScripts/EnemyController.cs" Line="30" Column="9" />
+      <File FileName="Assets/ControllerScripts/PlayerController.cs" Line="1" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Map1" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="DaydreamElements" expanded="True">
-                <Node name="Elements" expanded="True">
-                  <Node name="Tunneling" expanded="True">
-                    <Node name="Scripts" expanded="True">
-                      <Node name="FirstPersonTunnelingLocomotion.cs" selected="True" />
-                    </Node>
-                  </Node>
-                </Node>
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0d7468cf-81f0-4f3b-8a27-d4f00aa61a71" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>
