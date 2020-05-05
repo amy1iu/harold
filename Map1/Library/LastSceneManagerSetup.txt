@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/LibraryMap.unity
+- path: LibraryMap.unity
   isLoaded: 1
   isActive: 1
