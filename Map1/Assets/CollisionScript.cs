@@ -8,7 +8,7 @@ public class CollisionScript : MonoBehaviour
         {
         	if (hit.gameObject.tag == "oldman")
      		{
-         		Debug.Log("You have hit Harold");
+         		this.gameObject.GetComponent<Rigidbody>().isKinematic = false;
      		}
         }
 }

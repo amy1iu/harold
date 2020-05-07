@@ -129,7 +129,7 @@ namespace DaydreamElements.Tunneling {
 
     private void ApplyTranslation(float dt) {
       float forwardSpeed =  maxSpeed * smoothTouch.y;
-      Vector3 velocity = new Vector3(0.0f, 0.0f, forwardSpeed/5f);
+      Vector3 velocity = new Vector3(0.0f, 0.0f, forwardSpeed/3f);
 
       Quaternion cameraRotation = Camera.main.transform.rotation;
       cameraRotation = Quaternion.Euler(new Vector3(0.0f, cameraRotation.eulerAngles.y, 0.0f));

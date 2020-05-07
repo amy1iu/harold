@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{3D7B3E08-49C5-6FA9-284C-8E2A47E3113F}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/StayPut.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/CollisionScript.cs">
     <Files>
       <File FileName="Assets/DaydreamElements/Elements/Tunneling/Scripts/FirstPersonTunnelingLocomotion.cs" Line="134" Column="35" />
       <File FileName="Assets/ControllerScripts/EnemyController.cs" />
@@ -7,7 +7,8 @@
       <File FileName="Assets/DaydreamElements/Elements/Tunneling/Scripts/FadeVignetteController.cs" Line="1" Column="1" />
       <File FileName="Assets/GoogleVR/Scripts/Controller/GvrRecenterOnlyController.cs" Line="48" Column="10" />
       <File FileName="Assets/GoogleVR/Scripts/Headset/GvrHeadset.cs" Line="1" Column="1" />
-      <File FileName="Assets/StayPut.cs" Line="16" Column="9" />
+      <File FileName="Assets/StayPut.cs" Line="40" Column="41" />
+      <File FileName="Assets/CollisionScript.cs" Line="11" Column="12" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -28,7 +29,7 @@
                   <Node name="Headset" expanded="True" />
                 </Node>
               </Node>
-              <Node name="StayPut.cs" selected="True" />
+              <Node name="CollisionScript.cs" selected="True" />
             </Node>
           </Node>
         </State>
