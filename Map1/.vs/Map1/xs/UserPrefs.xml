@@ -1,16 +1,47 @@
 ﻿<Properties StartupConfiguration="{3D7B3E08-49C5-6FA9-284C-8E2A47E3113F}|">
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ControllerScripts/PlayerController.cs">
     <Files>
-      <File FileName="Assets/DaydreamElements/Elements/Tunneling/Scripts/FirstPersonTunnelingLocomotion.cs" Line="1" Column="1" />
-      <File FileName="Assets/ControllerScripts/EnemyController.cs" Line="30" Column="9" />
+      <File FileName="Assets/DaydreamElements/Elements/Tunneling/Scripts/FirstPersonTunnelingLocomotion.cs" Line="134" Column="35" />
+      <File FileName="Assets/ControllerScripts/EnemyController.cs" />
       <File FileName="Assets/ControllerScripts/PlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets/DaydreamElements/Elements/Tunneling/Scripts/FadeVignetteController.cs" />
+      <File FileName="Assets/GoogleVR/Scripts/Controller/GvrRecenterOnlyController.cs" />
+      <File FileName="Assets/GoogleVR/Scripts/Headset/GvrHeadset.cs" />
+      <File FileName="Assets/StayPut.cs" />
+      <File FileName="Assets/CollisionScript.cs" Line="11" Column="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Map1" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="ControllerScripts" expanded="True">
+                <Node name="PlayerController.cs" selected="True" />
+              </Node>
+              <Node name="DaydreamElements" expanded="True">
+                <Node name="Elements" expanded="True">
+                  <Node name="Tunneling" expanded="True">
+                    <Node name="Scripts" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="GoogleVR" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="Controller" expanded="True" />
+                  <Node name="Headset" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="863bb75b-b29e-4134-9114-fcf0e456fa8a" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>

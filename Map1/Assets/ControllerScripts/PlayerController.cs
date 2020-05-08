@@ -8,9 +8,11 @@ public class PlayerController : MonoBehaviour
     public Text Timer;
     public Text Score;
     public GameObject Food;
+    public AudioSource backgroundmusic;
+    public AudioSource foodSFX;
+    public AudioSource gameover;
 
-
-    private int minutes = 15;
+    private int minutes = 2;
     private int seconds = 0;
     private int counter = 0;
     private int score = 0;
@@ -51,6 +53,9 @@ public class PlayerController : MonoBehaviour
                 {
                     seconds = 0;
                     Timer.color = Color.red;
+                    this.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+                    backgroundmusic.gameObject.GetComponent<AudioSource>().Stop();
+                    gameover.gameObject.GetComponent<AudioSource>().Play();
                 }
                 else
                 {
@@ -73,6 +78,9 @@ public class PlayerController : MonoBehaviour
             score++;
             setScoreText();
             //Destroy(hit.gameObject);
+            minutes = 2;
+            seconds = 0;
+            counter = 0;
 
             Food.SendMessage("teleport");
         }
