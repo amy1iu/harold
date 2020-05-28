@@ -67,6 +67,8 @@ public class PlayerController : MonoBehaviour
             seconds = "00";
             minutes = "00";
             this.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+            this.gameObject.GetComponent<BoxCollider>().enabled = false;
+            this.gameObject.GetComponent<CharacterController>().enabled = false;
             backgroundmusic.gameObject.GetComponent<AudioSource>().Stop();
             gameover.gameObject.GetComponent<AudioSource>().Play();
             Invoke("endGame", 10);
@@ -91,6 +93,7 @@ public class PlayerController : MonoBehaviour
     {
         deathMenu.SetActive(true);
         Time.timeScale = 0f;
+        this.gameObject.GetComponent<CharacterController>().enabled = true;
     }
 
 }

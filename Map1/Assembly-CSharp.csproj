@@ -209,6 +209,16 @@
      <Compile Include="Assets\GoogleVR\Scripts\Utilities\Internal\GvrCursorHelper.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Utilities\Internal\SuppressMemoryAllocationErrorAttribute.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
+     <Compile Include="Assets\InGameSoundManager.cs" />
+     <Compile Include="Assets\InteractiveButton.cs" />
+     <Compile Include="Assets\KeepInFront.cs" />
+     <Compile Include="Assets\MainMenu.cs" />
+     <Compile Include="Assets\PauseMenu.cs" />
+     <Compile Include="Assets\Scripts\LoadScene.cs" />
+     <Compile Include="Assets\Scripts\OptionButton.cs" />
+     <Compile Include="Assets\Scripts\quit.cs" />
+     <Compile Include="Assets\SetDiff.cs" />
+     <Compile Include="Assets\SetVolume.cs" />
      <Compile Include="Assets\StayPut.cs" />
      <None Include="Assets\DaydreamRenderer\Shaders\daydreamStandardInclude.cginc" />
      <None Include="Assets\DaydreamRenderer\Shaders\daydreamGizmo.shader" />
@@ -259,19 +269,19 @@
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\DaydreamRenderer\Resources\shadowFilter.shader" />
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/lizso/Google Drive/12th Grade/Computer Science 5/Git2/Map1/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/lizso/Google Drive/12th Grade/Computer Science 5/Git3/Map1/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/lizso/Google Drive/12th Grade/Computer Science 5/Git2/Map1/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>C:/Users/lizso/Google Drive/12th Grade/Computer Science 5/Git3/Map1/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/lizso/Google Drive/12th Grade/Computer Science 5/Git2/Map1/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>C:/Users/lizso/Google Drive/12th Grade/Computer Science 5/Git3/Map1/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/lizso/Google Drive/12th Grade/Computer Science 5/Git2/Map1/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/lizso/Google Drive/12th Grade/Computer Science 5/Git3/Map1/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>C:/Users/lizso/Google Drive/12th Grade/Computer Science 5/Git2/Map1/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>C:/Users/lizso/Google Drive/12th Grade/Computer Science 5/Git3/Map1/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -472,22 +482,22 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.20f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="fbsdefines_cs">
- <HintPath>C:/Users/lizso/Google Drive/12th Grade/Computer Science 5/Git2/Map1/Assets/DaydreamRenderer/Plugins/fbsdefines_cs.dll</HintPath>
+ <HintPath>C:/Users/lizso/Google Drive/12th Grade/Computer Science 5/Git3/Map1/Assets/DaydreamRenderer/Plugins/fbsdefines_cs.dll</HintPath>
  </Reference>
  <Reference Include="FlatBuffers">
- <HintPath>C:/Users/lizso/Google Drive/12th Grade/Computer Science 5/Git2/Map1/Assets/DaydreamRenderer/Plugins/FlatBuffers.dll</HintPath>
+ <HintPath>C:/Users/lizso/Google Drive/12th Grade/Computer Science 5/Git3/Map1/Assets/DaydreamRenderer/Plugins/FlatBuffers.dll</HintPath>
  </Reference>
  <Reference Include="Google.ProtocolBuffers">
- <HintPath>C:/Users/lizso/Google Drive/12th Grade/Computer Science 5/Git2/Map1/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
+ <HintPath>C:/Users/lizso/Google Drive/12th Grade/Computer Science 5/Git3/Map1/Assets/GoogleVR/Plugins/Google.ProtocolBuffers.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
- <HintPath>C:/Users/lizso/Google Drive/12th Grade/Computer Science 5/Git2/Map1/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+ <HintPath>C:/Users/lizso/Google Drive/12th Grade/Computer Science 5/Git3/Map1/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>C:/Users/lizso/Google Drive/12th Grade/Computer Science 5/Git2/Map1/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/lizso/Google Drive/12th Grade/Computer Science 5/Git3/Map1/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
- <HintPath>C:/Users/lizso/Google Drive/12th Grade/Computer Science 5/Git2/Map1/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+ <HintPath>C:/Users/lizso/Google Drive/12th Grade/Computer Science 5/Git3/Map1/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.20f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

@@ -41,7 +41,7 @@ public class EnemyController : MonoBehaviour
 
 	IEnumerator FinishCut()
 	{
-		yield return new WaitForSeconds(6);
+		yield return new WaitForSeconds(3);
 		startWalk = true;
 	}
 }

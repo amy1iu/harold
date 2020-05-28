@@ -15,24 +15,30 @@ public class CollisionScript : MonoBehaviour
         backgroundmusic.gameObject.GetComponent<AudioSource>().Play();
     }
 
-    private void OnControllerColliderHit (ControllerColliderHit hit)
-	{
-		if (hit.gameObject.tag == "oldman")
-		{
-			this.gameObject.GetComponent<Rigidbody>().isKinematic = false;
-			backgroundmusic.gameObject.GetComponent<AudioSource>().Stop();
-			gameover.gameObject.GetComponent<AudioSource>().Play();
-			Invoke("endGamePlayerController", 10);
-			Debug.Log("game has ended");
-		}
+    private void OnCollisionEnter(Collision hit)
+    {
+        if (hit.gameObject.tag == "food")
+        {
+            foodSFX.gameObject.GetComponent<AudioSource>().Play();
+        }
+        
+        if (hit.gameObject.tag == "oldman")
+        {
+            this.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+            this.gameObject.GetComponent<BoxCollider>().enabled = false;
+            this.gameObject.GetComponent<CharacterController>().enabled = false;
+            
+            backgroundmusic.gameObject.GetComponent<AudioSource>().Stop();
+            gameover.gameObject.GetComponent<AudioSource>().Play();
 
-		if (hit.gameObject.tag == "food")
-		{
-			foodSFX.gameObject.GetComponent<AudioSource>().Play();
-		}
-	}
+            Invoke("endGamePlayerController", 10);
+			Debug.Log("game has ended");
+        }
+    }
+
 	private void endGamePlayerController()
 	{
 		instance.endGame();
+        this.gameObject.GetComponent<CharacterController>().enabled = true;
 	}
 }
