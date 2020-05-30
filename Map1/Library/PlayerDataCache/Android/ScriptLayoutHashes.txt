@@ -1,10 +1,11 @@
 Android
 PlayerPath?
-C:/Users/lizso/Google Drive/12th Grade/Computer Science 5/Git3/Map1/yeehaw.apk
+/Users/siddharthhathi/OneDrive/Everything/Documents/School/12th Grade/cs5/preMerge/Map1/final.apk
 SceneListBegin?
 Assets/Scenes/StartMenu.unity
 Assets/Scenes/LibraryMap.unity
 SceneListEnd?
+52a62655d36a3afef2b062511b802185 Assembly-CSharp.dll:.setRotation
 fcc5249d7073c8b9298d2c58b0014711 Assembly-CSharp.dll:DaydreamElements.Tunneling.FadeVignetteController
 3c08375166df118bd1801438fc36b92f Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 f177f23b109d6ac24444ebc63c4c4960 Assembly-CSharp.dll:.GvrDropdown
@@ -23,7 +24,7 @@ e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.G
 e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 201e3fde670b00545944bb3db215c80a UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Gvr.Internal.EditorCameraOriginDict
-5a44de908c26e269dbd3d29687175774 Assembly-CSharp.dll:.PlayerController
+8621df82ee76921eaefb10cb02af74e6 Assembly-CSharp.dll:.PlayerController
 e7a73f5f78ba6445195ec23b74a1ce2d Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.FoodController
 84b31b71fcfc0d02bf4204522ea292b1 Assembly-CSharp.dll:.GvrVideoPlayerTexture
@@ -136,6 +137,7 @@ c8c5e65e9fb858572516474d6e2102bc Assembly-CSharp.dll:.PauseMenu
 303ad70ce203ad874efe2965d0fbcff9 Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsEventTracker
 7fb9de8dcf73854b6b328eca1f7a6e6d Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsTracker
 06a7b7d77e413c9dfe0d63cd332ab9d5 Assembly-CSharp.dll:daydreamrenderer.BVHTest
+db5b7ef709f51c5f08d0fa114211d014 Assembly-CSharp.dll:.setScore
 b8a5e8091ab0b8861d2add371082c5e0 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
 baf9bc997921caef326ef7fd949d32e1 Assembly-CSharp.dll:DaydreamElements.Tunneling.FirstPersonTunnelingLocomotion
 08c997bef92d81ef1e6066060eb4f60c Assembly-CSharp.dll:daydreamrenderer.BakeFilter
@@ -234,6 +236,7 @@ cf235635ef27e2f78099023d3de64d5e Assembly-CSharp.dll:daydreamrenderer.BakeData
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Gvr.Internal.EmulatorClientSocket
 7a6837fe2e1bc65ba24bcd2a74cc367f Assembly-CSharp.dll:.GvrControllerInput
 9272257521fa59e2ad14f35e96c918e2 Assembly-CSharp.dll:GoogleVR.HelloVR.HelloVRManager
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.rotate
 01bdf339a887de280d38eeb519dfda0d Assembly-CSharp.dll:.GvrControllerReticleVisual
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.GvrXREventsSubscriber
 719e5a8f63dda20dad1ba86875c22268 Assembly-CSharp.dll:GoogleVR.VideoDemo.AutoPlayVideo

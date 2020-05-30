@@ -13,7 +13,7 @@ public class EnemyController : MonoBehaviour
 	//startWalk boolean to prevent Librarian from moving before cutscene is over
 	private bool startWalk = false;
 
-    // Start is called before the first frame update
+	// Start is called before the first frame update
 	void Start()
 	{
 		player = GameObject.FindGameObjectWithTag("Player");
@@ -22,7 +22,7 @@ public class EnemyController : MonoBehaviour
 		StartCoroutine(FinishCut());
 	}
 
-    // Update is called once per frame
+	// Update is called once per frame
 	void Update()
 	{
 		if (startWalk)
@@ -35,6 +35,7 @@ public class EnemyController : MonoBehaviour
 			else
 			{
 				enemy.destination = player.transform.position;
+			    
 			}
 		}
 	}

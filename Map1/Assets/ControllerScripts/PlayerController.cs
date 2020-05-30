@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +13,10 @@ public class PlayerController : MonoBehaviour
     public AudioSource backgroundmusic;
     public AudioSource foodSFX;
     public AudioSource gameover;
+    public GameObject enemy;
+    public TextMeshProUGUI endGameText;
+
+    public static int highScore;
 
     private float secondsTotal = 120;
     private float secondsElapsed = 0;
@@ -27,37 +32,53 @@ public class PlayerController : MonoBehaviour
         setScoreText();
         deathMenu.SetActive(false);
         Time.timeScale = 1f;
-        secondsTotal = 15 + 5*(Mathf.Round(10*(1-PlayerPrefs.GetFloat("Difficulty"))));//gets a value 1-10, 10 is easiest. each point is an additional 5 seconds
+        secondsTotal = 15 + 5 * (Mathf.Round(10 * (1 - PlayerPrefs.GetFloat("Difficulty"))));//gets a value 1-10, 10 is easiest. each point is an additional 5 seconds
+
+        highScore = PlayerPrefs.GetInt("highScore", highScore);
     }
 
     void setTimer()
     {
+        /*
+        if (seconds == 0)
+        {
+            Timer.text = minutes.ToString() + ":00";
+        }
+        else if (seconds < 10)
+        {
+            Timer.text = minutes.ToString() + ":0" + seconds.ToString();
+        }
+        else
+        {
+            Timer.text = minutes.ToString() + ":" + seconds.ToString();
+        }*/
+
         Timer.text = (minutes) + ":" + (seconds);//Timer.text = minutes.ToString() + ":00";
     }
 
     void setScoreText()
     {
-        Score.text = score.ToString();
+        Score.text = "Score: " + score.ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
         secondsElapsed = (Mathf.Round(Time.timeSinceLevelLoad - lastTime));
-        minutes = ((int)((secondsTotal - secondsElapsed)/60)).ToString();
-        if(outOfTime == false)
+        minutes = ((int)((secondsTotal - secondsElapsed) / 60)).ToString();
+        if (outOfTime == false)
         {
-            if((int)((secondsTotal - secondsElapsed)%60) == 0)
+            if ((int)((secondsTotal - secondsElapsed) % 60) == 0)
             {
                 seconds = "00";
             }
-            else if((int)((secondsTotal - secondsElapsed)%60) < 10)
+            else if ((int)((secondsTotal - secondsElapsed) % 60) < 10)
             {
-                seconds = "0" + ((secondsTotal - secondsElapsed)%60).ToString();
+                seconds = "0" + ((secondsTotal - secondsElapsed) % 60).ToString();
             }
             else
             {
-                seconds = ((int)(secondsTotal - secondsElapsed)%60).ToString();
+                seconds = ((int)(secondsTotal - secondsElapsed) % 60).ToString();
             }
         }
         if (secondsElapsed == secondsTotal)
@@ -78,9 +99,15 @@ public class PlayerController : MonoBehaviour
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        if (hit.gameObject.name == "Food Sphere")
+        if(hit.gameObject.name == "Food Sphere")
         {
             score++;
+            if (score > highScore)
+            {
+                highScore = score;
+                print(highScore);
+                PlayerPrefs.SetInt("highScore", highScore);
+            }
             setScoreText();
             //Destroy(hit.gameObject);
             lastTime = Time.timeSinceLevelLoad;
@@ -89,8 +116,10 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+
     public void endGame()
     {
+        endGameText.text = "You were caught eating in the library \n Score: " + score + "\n Highscore: " + highScore;
         deathMenu.SetActive(true);
         Time.timeScale = 0f;
         this.gameObject.GetComponent<CharacterController>().enabled = true;
